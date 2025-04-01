@@ -1,4 +1,4 @@
-namespace FactoryMethodFull.model;
+namespace FactoryMethod.Model;
 
 public abstract class IPhone
 {
@@ -6,7 +6,7 @@ public abstract class IPhone
 
     public void Assemble() => Console.WriteLine("Assembling all the hardwares");
 
-    public void Certificates() =>  Console.WriteLine("Testing all the certificates");
-
+    public void Certificates() => Console.WriteLine("Testing all the hardwares");
+    
     public void Pack() => Console.WriteLine("Packing the device");
 }

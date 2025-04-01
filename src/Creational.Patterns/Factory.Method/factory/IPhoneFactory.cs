@@ -1,20 +1,20 @@
-using FactoryMethodFull.model;
+using FactoryMethod.Model;
 
-namespace FactoryMethodFull.Factory;
+namespace FactoryMethod.factory;
 
 public abstract class IPhoneFactory
 {
-    public IPhone OrderIphone()
+    public IPhone OrderIPhone()
     {
-        var device = CreateIphone();
+        var device = CreateIPhone();
         
         device.GetHardware();
         device.Assemble();
         device.Certificates();
         device.Pack();
-
+        
         return device;
     }
 
-    protected abstract IPhone CreateIphone();
-}
+    protected abstract IPhone CreateIPhone();
+}   
