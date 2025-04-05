@@ -5,9 +5,9 @@ namespace AbstractFactory.Factory;
 
 public abstract class IPhoneFactory
 {
-    public IPhone? OrderIphone(IPhoneLevel level, CountryRulesAbstractFactory countryRules)
+    public IPhone? OrderIphone(IPhoneLevel level)
     {
-        var device = CreateIPhone(level, countryRules);
+        var device = CreateIPhone(level);
 
         if (device == null) return device;
         
@@ -19,5 +19,5 @@ public abstract class IPhoneFactory
         return device;
     }
     
-    protected abstract IPhone? CreateIPhone(IPhoneLevel level, CountryRulesAbstractFactory countryRules);
+    protected abstract IPhone? CreateIPhone(IPhoneLevel level);
 }

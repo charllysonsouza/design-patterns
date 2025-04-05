@@ -3,13 +3,13 @@ using AbstractFactory.Model;
 
 namespace AbstractFactory.Factory;
 
-public class IPhone15Factory : IPhoneFactory
+public class IPhone15Factory(CountryRulesAbstractFactory countryRules) : IPhoneFactory
 {
-    protected override IPhone? CreateIPhone(IPhoneLevel level, CountryRulesAbstractFactory countryRules)
+    protected override IPhone? CreateIPhone(IPhoneLevel level)
     {
         return level switch
         {
-            IPhoneLevel.Standard=> new IPhone15(countryRules),
+            IPhoneLevel.Standard => new IPhone15(countryRules),
             IPhoneLevel.HighEnd => new IPhone15Pro(countryRules),
             _ => null
         };

@@ -3,9 +3,9 @@ using AbstractFactory.Model;
 
 namespace AbstractFactory.Factory;
 
-public class IPhone16Factory : IPhoneFactory
+public class IPhone16Factory(CountryRulesAbstractFactory countryRules) : IPhoneFactory
 {
-    protected override IPhone? CreateIPhone(IPhoneLevel level, CountryRulesAbstractFactory countryRules)
+    protected override IPhone? CreateIPhone(IPhoneLevel level)
     {
         return level switch
         {
