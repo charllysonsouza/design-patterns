@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Creational.Pat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Structural.Patterns\Adapter\Adapter.csproj", "{67DE38D5-EA0E-429B-83AD-EF980FA296A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bridge", "Structural.Patterns\Bridge\Bridge.csproj", "{AD76805F-B446-42C1-BFB8-AA1D54A9696D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{67DE38D5-EA0E-429B-83AD-EF980FA296A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67DE38D5-EA0E-429B-83AD-EF980FA296A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67DE38D5-EA0E-429B-83AD-EF980FA296A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD76805F-B446-42C1-BFB8-AA1D54A9696D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD76805F-B446-42C1-BFB8-AA1D54A9696D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD76805F-B446-42C1-BFB8-AA1D54A9696D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD76805F-B446-42C1-BFB8-AA1D54A9696D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
