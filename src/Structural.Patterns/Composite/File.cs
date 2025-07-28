@@ -5,7 +5,7 @@ public class File(string name, string content) : IFileSystemItem
     public string Name { get; } = name;
     private string Content { get; } = content;
 
-    public int GetSize()
+    public int Count()
     {
         return Content.Length;
     }

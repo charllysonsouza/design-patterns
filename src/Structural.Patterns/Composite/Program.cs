@@ -20,9 +20,7 @@ d3.AddItem(d1);
 d3.AddItem(d2);
 
 Console.WriteLine(d3);
-
-var d4 = d3.ChangeDirectory("ADs");
-Console.WriteLine(d4);
+Console.WriteLine(d2);
 Console.WriteLine(d1);
 
 
