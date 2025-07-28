@@ -13,7 +13,14 @@ public class Directory(string name) : IFileSystemItem
 
     public override string ToString()
     {
-        return $"{Name}: {Count()} characters";
+        var text = $"{Name}: {Count()}\n";
+        foreach (var child in Children)
+        {
+            if (child is Directory directory)
+                text += directory.ToString();
+        }
+        
+        return text;
     }
     
     public int Count()

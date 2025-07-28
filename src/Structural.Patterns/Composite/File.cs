@@ -9,4 +9,9 @@ public class File(string name, string content) : IFileSystemItem
     {
         return Content.Length;
     }
+
+    public override string ToString()
+    {
+        return $"{Name}: {Count()}\n";
+    }
 }
