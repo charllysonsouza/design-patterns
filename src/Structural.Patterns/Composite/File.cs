@@ -3,6 +3,7 @@ namespace Composite;
 public class File(string name, string content) : IFileSystemItem
 {
     public string Name { get; } = name;
+    public IFileSystemItem? Parent { get; set; }
     private string Content { get; } = content;
 
     public int Count()
